@@ -64,7 +64,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="objParticlesLoadingView" destination="4qa-oX-xR8" id="Qjf-VC-j6R"/>
+                        <outlet property="objAJParticlesLoadingView" destination="4qa-oX-xR8" id="xQv-eq-Is5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jmw-NR-9Iv" sceneMemberID="firstResponder"/>

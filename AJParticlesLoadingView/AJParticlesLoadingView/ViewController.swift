@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var objParticlesLoadingView: AJParticlesLoadingView!
+    @IBOutlet var objAJParticlesLoadingView: AJParticlesLoadingView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,22 +19,22 @@ class ViewController: UIViewController {
          */
         
         // Set the Particle Image
-        objParticlesLoadingView.particleImage = .balloon
+        objAJParticlesLoadingView.particleImage = .balloon
         
         // Set the Particle Effect Type
-        objParticlesLoadingView.particleEffect = .fireflies
+        objAJParticlesLoadingView.particleEffect = .fireflies
         
         // Set the duration for completing the animation around the border of a view
-        objParticlesLoadingView.duration = 2.0
+        objAJParticlesLoadingView.duration = 2.0
        
         // Set the size of each particle images which are being used for loading particles
-        objParticlesLoadingView.particlesSize = 8.0
+        objAJParticlesLoadingView.particlesSize = 8.0
         
         // Set clockwiseRotation enabled or disabled
-        objParticlesLoadingView.clockwiseRotation = false
+        objAJParticlesLoadingView.clockwiseRotation = false
       
         // Set the speed at which particles are being loaded inside a view
-        objParticlesLoadingView.particlesSpeed = 70.0
+        objAJParticlesLoadingView.particlesSpeed = 70.0
         
     }
 
@@ -47,10 +47,10 @@ class ViewController: UIViewController {
         sender.isSelected = !sender.isSelected
         
         if sender.isSelected {
-            objParticlesLoadingView.startAnimating()
+            objAJParticlesLoadingView.startAnimating()
             sender.setTitle("STOP", for: UIControlState())
         } else {
-            objParticlesLoadingView.stopAnimating()
+            objAJParticlesLoadingView.stopAnimating()
             sender.setTitle("START", for: UIControlState())
         }
     }

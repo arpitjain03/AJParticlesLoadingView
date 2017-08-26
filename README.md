@@ -21,7 +21,7 @@ To see it in action clone the repo and run the sample project. It will show AJPa
 For using it in your project :
 1. Take a UIView from storyboard where you want to load particles.
 2. Assign that UIView class of AJParticlesLoadingView.
-3. Set the ‘particleImage’ and ‘particlelEffect’
+3. Set the `particleImage` and `particleEffect`
 
 ```swift
 
@@ -39,19 +39,19 @@ objParticlesLoadingView.stopAnimating()
 
 ```swift
 //For changing the particle image 
-objParticlesLoadingView.particleImage = .heart  // you will get all added image here
+objAJParticlesLoadingView.particleImage = .heart  // you will get all added image here
 
 //For changing the particle image 
-objParticlesLoadingView.particleEffect = .fire  // you will get all added animations here
+objAJParticlesLoadingView.particleEffect = .fire  // you will get all added animations here
 
 // Duration in seconds for completing the animation around the border of a view
-objParticlesLoadingView.duration = 2.0
+objAJParticlesLoadingView.duration = 2.0
     
 // The size of each particle images which are being used for loading particles
-objParticlesLoadingView.particlesSize = 8.0
+objAJParticlesLoadingView.particlesSize = 8.0
 
 // The speed at which particles are being loaded inside a view
-objParticlesLoadingView.particlesSpeed = 70.0
+objAJParticlesLoadingView.particlesSpeed = 70.0
 ```
 
 ## License
