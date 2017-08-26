@@ -1,6 +1,7 @@
 # AJParticlesLoadingView
 
-A simple subclass of UIView for creating amazing particles loading animation with using `Sprite Kit`. Our Xcode provides built-in [SpriteKit Particle File](http://help.apple.com/xcode/mac/current/#/dev9eed16018) which are being used to achieve different kinds of loading particles.  
+`AJParticlesLoadingView` is a simple subclass of UIView for creating amazing particles loading animation with using `Sprite Kit`. Our Xcode provides built-in [SpriteKit Particle File](http://help.apple.com/xcode/mac/current/#/dev9eed16018) which are being used to achieve different kinds of loading particles.  
+
 
 ![GIF1](https://media.giphy.com/media/xTcf1cCvsQs8ahUo6s/giphy.gif)![GIF2](https://media.giphy.com/media/3o7qiNeGt6Wcb31W5q/giphy.gif
 )![GIF3](https://media.giphy.com/media/xUPJUKgv6mqT0mCEH6/giphy.gif)![GIF4](https://media.giphy.com/media/xTcf0ZhrrWWhHx2ICY/giphy.gif)![GIF5](https://media.giphy.com/media/3o7qiWgLkgqHaG7R16/giphy.gif)![GIF6](https://media.giphy.com/media/xTcf0XUC9IQrR0NiO4/giphy.gif)
@@ -25,13 +26,13 @@ For using it in your project :
 ```swift
 
 var objParticlesLoadingView: AJParticlesLoadingView!  
-objParticlesLoadingView.particleImage = .heart  // Texture Image
+objParticlesLoadingView.particleImage = .heart  // Particle Image
 objParticlesLoadingView.particleEffect = .fire  // Particle Effect Type
 ```
-4. Now for starting and stopping animation simply use:
+4. Now for handling animation simply use:
 ```swift
 objParticlesLoadingView.startAnimating()
-objParticlesLoadingView.startAnimating()
+objParticlesLoadingView.stopAnimating()
 ```
 
 ## Customizations
@@ -52,3 +53,6 @@ objParticlesLoadingView.particlesSize = 8.0
 // The speed at which particles are being loaded inside a view
 objParticlesLoadingView.particlesSpeed = 70.0
 
+## License
+
+`AJParticlesLoadingView` is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
