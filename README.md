@@ -52,6 +52,7 @@ objParticlesLoadingView.particlesSize = 8.0
 
 // The speed at which particles are being loaded inside a view
 objParticlesLoadingView.particlesSpeed = 70.0
+```
 
 ## License
 
