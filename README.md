@@ -57,3 +57,7 @@ objAJParticlesLoadingView.particlesSpeed = 70.0
 ## License
 
 `AJParticlesLoadingView` is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+
+## Author
+For any queries and suggestions reach out at arpit.cor@gmail.com
+
