@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6YX-qV-gN1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6YX-qV-gN1">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -27,13 +27,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AJParticlesLoadingView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPo-mU-as3">
-                                <rect key="frame" x="100.5" y="323" width="183.5" height="23"/>
+                                <rect key="frame" x="96" y="292" width="183.5" height="23"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-S8-o9o">
-                                <rect key="frame" x="157.5" y="593" width="60" height="30"/>
+                                <rect key="frame" x="157.5" y="617" width="60" height="30"/>
                                 <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Z3H-ud-Ggo"/>
@@ -45,22 +45,20 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qa-oX-xR8" customClass="AJParticlesLoadingView" customModule="AJParticlesLoadingView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="574" id="N7i-Rv-CMx"/>
-                                    <constraint firstAttribute="width" constant="375" id="QgC-WW-s9Y"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fPo-mU-as3" firstAttribute="centerY" secondItem="2fV-Ce-lYh" secondAttribute="centerY" constant="1" id="0h9-3w-8BD"/>
-                            <constraint firstItem="fPo-mU-as3" firstAttribute="centerX" secondItem="2fV-Ce-lYh" secondAttribute="centerX" constant="4.5" id="AlY-4M-575"/>
-                            <constraint firstItem="C7w-S8-o9o" firstAttribute="top" secondItem="4qa-oX-xR8" secondAttribute="bottom" constant="19" id="Lgi-Bn-sNE"/>
-                            <constraint firstItem="4qa-oX-xR8" firstAttribute="centerX" secondItem="2fV-Ce-lYh" secondAttribute="centerX" id="VgA-xi-Shj"/>
-                            <constraint firstItem="4qa-oX-xR8" firstAttribute="centerY" secondItem="2fV-Ce-lYh" secondAttribute="centerY" constant="-46.5" id="gJU-15-cRl"/>
+                            <constraint firstItem="4qa-oX-xR8" firstAttribute="top" secondItem="2fV-Ce-lYh" secondAttribute="top" id="2Lk-aK-hWU"/>
+                            <constraint firstItem="mdu-ht-Wi2" firstAttribute="top" secondItem="C7w-S8-o9o" secondAttribute="bottom" constant="20" id="3aa-WG-abt"/>
+                            <constraint firstItem="fPo-mU-as3" firstAttribute="centerX" secondItem="4qa-oX-xR8" secondAttribute="centerX" id="O16-5j-Mid"/>
+                            <constraint firstItem="4qa-oX-xR8" firstAttribute="leading" secondItem="2fV-Ce-lYh" secondAttribute="leading" id="X1U-Dl-6Qx"/>
+                            <constraint firstItem="C7w-S8-o9o" firstAttribute="top" secondItem="4qa-oX-xR8" secondAttribute="bottom" constant="10" id="dDI-sK-iD2"/>
                             <constraint firstItem="C7w-S8-o9o" firstAttribute="centerX" secondItem="2fV-Ce-lYh" secondAttribute="centerX" id="ikI-6E-21r"/>
+                            <constraint firstAttribute="trailing" secondItem="4qa-oX-xR8" secondAttribute="trailing" id="mCd-3c-C7A"/>
+                            <constraint firstItem="fPo-mU-as3" firstAttribute="centerY" secondItem="4qa-oX-xR8" secondAttribute="centerY" id="w4J-tk-j7c"/>
                         </constraints>
                     </view>
                     <connections>

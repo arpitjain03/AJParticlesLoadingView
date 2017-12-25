@@ -19,7 +19,7 @@ class ViewController: UIViewController {
          */
         
         // Set the Particle Image
-        objAJParticlesLoadingView.particleImage = .balloon
+        objAJParticlesLoadingView.particleImage = .heart
         
         // Set the Particle Effect Type
         objAJParticlesLoadingView.particleEffect = .fireflies
