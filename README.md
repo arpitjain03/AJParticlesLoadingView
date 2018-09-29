@@ -7,7 +7,7 @@
 )![GIF3](https://media.giphy.com/media/xUPJUKgv6mqT0mCEH6/giphy.gif)![GIF4](https://media.giphy.com/media/xTcf0ZhrrWWhHx2ICY/giphy.gif)![GIF5](https://media.giphy.com/media/3o7qiWgLkgqHaG7R16/giphy.gif)![GIF6](https://media.giphy.com/media/xTcf0XUC9IQrR0NiO4/giphy.gif)
 
 ## Requirements
-iOS 8.0 and Swift 4.2 are required. 
+iOS 8.0 and Swift 4.0 are required. 
 
 ## Installation
 1. Just Drag and Drop AJParticlesLoadingView folder in your project.
