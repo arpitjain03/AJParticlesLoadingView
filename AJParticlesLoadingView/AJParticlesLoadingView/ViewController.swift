@@ -56,14 +56,15 @@ class ViewController: UIViewController {
                 }
             }
             // Log choice to Xcode console.
-            print(objAJParticlesLoadingView.particleImage.rawValue+" / "+objAJParticlesLoadingView.particleEffect.rawValue)
+            print(objAJParticlesLoadingView.particleImage.rawValue
+                + " - " + objAJParticlesLoadingView.particleEffect.rawValue)
             // Start animating
             objAJParticlesLoadingView.startAnimating()
-            sender.setTitle("STOP", for: UIControl.State())
+            sender.setTitle("STOP", for: UIControlState())
             sender.layer.backgroundColor = UIColor.red.cgColor
         } else {
             objAJParticlesLoadingView.stopAnimating()
-            sender.setTitle("START", for: UIControl.State())
+            sender.setTitle("START", for: UIControlState())
             sender.layer.backgroundColor = UIColor.green.cgColor
         }
     }
