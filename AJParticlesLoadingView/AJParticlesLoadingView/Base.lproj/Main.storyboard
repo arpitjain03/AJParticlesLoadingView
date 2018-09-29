@@ -1,64 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6YX-qV-gN1">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6YX-qV-gN1">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Futura.ttc">
-            <string>Futura-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="quM-q8-KkW">
             <objects>
                 <viewController id="6YX-qV-gN1" customClass="ViewController" customModule="AJParticlesLoadingView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Wpf-FV-h66"/>
-                        <viewControllerLayoutGuide type="bottom" id="mdu-ht-Wi2"/>
+                        <viewControllerLayoutGuide type="top" id="8zn-HU-KlW"/>
+                        <viewControllerLayoutGuide type="bottom" id="VCf-C8-51t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2fV-Ce-lYh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AJParticlesLoadingView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPo-mU-as3">
-                                <rect key="frame" x="96" y="292" width="183.5" height="23"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-S8-o9o">
-                                <rect key="frame" x="157.5" y="617" width="60" height="30"/>
-                                <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Z3H-ud-Ggo"/>
-                                    <constraint firstAttribute="width" constant="60" id="m3B-lq-CGL"/>
-                                </constraints>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="btnClicked:" destination="6YX-qV-gN1" eventType="touchUpInside" id="HT9-du-dyA"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qa-oX-xR8" customClass="AJParticlesLoadingView" customModule="AJParticlesLoadingView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="540"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AJParticlesLoadingView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAZ-h1-H5Q">
+                                        <rect key="frame" x="208.5" y="259" width="183" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jAZ-h1-H5Q" firstAttribute="centerY" secondItem="4qa-oX-xR8" secondAttribute="centerY" id="6ZS-vd-xmu"/>
+                                    <constraint firstItem="jAZ-h1-H5Q" firstAttribute="centerX" secondItem="4qa-oX-xR8" secondAttribute="centerX" id="ttl-VQ-BvF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86a-qd-Jom">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7w-S8-o9o" userLabel="Button">
+                                        <rect key="frame" x="260.5" y="10" width="79" height="40"/>
+                                        <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Z3H-ud-Ggo"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="m3B-lq-CGL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="START"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                <color key="value" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnClicked:" destination="6YX-qV-gN1" eventType="touchUpInside" id="HT9-du-dyA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="C7w-S8-o9o" firstAttribute="centerX" secondItem="86a-qd-Jom" secondAttribute="centerX" id="LrV-1H-yKG"/>
+                                    <constraint firstItem="C7w-S8-o9o" firstAttribute="centerY" secondItem="86a-qd-Jom" secondAttribute="centerY" id="ghC-ce-t57"/>
+                                </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4qa-oX-xR8" firstAttribute="top" secondItem="2fV-Ce-lYh" secondAttribute="top" id="2Lk-aK-hWU"/>
-                            <constraint firstItem="mdu-ht-Wi2" firstAttribute="top" secondItem="C7w-S8-o9o" secondAttribute="bottom" constant="20" id="3aa-WG-abt"/>
-                            <constraint firstItem="fPo-mU-as3" firstAttribute="centerX" secondItem="4qa-oX-xR8" secondAttribute="centerX" id="O16-5j-Mid"/>
+                            <constraint firstItem="86a-qd-Jom" firstAttribute="top" secondItem="4qa-oX-xR8" secondAttribute="bottom" id="SAa-JS-LcT"/>
+                            <constraint firstItem="4qa-oX-xR8" firstAttribute="height" secondItem="2fV-Ce-lYh" secondAttribute="height" multiplier="9/10" id="Tcq-BX-b5Z"/>
                             <constraint firstItem="4qa-oX-xR8" firstAttribute="leading" secondItem="2fV-Ce-lYh" secondAttribute="leading" id="X1U-Dl-6Qx"/>
-                            <constraint firstItem="C7w-S8-o9o" firstAttribute="top" secondItem="4qa-oX-xR8" secondAttribute="bottom" constant="10" id="dDI-sK-iD2"/>
-                            <constraint firstItem="C7w-S8-o9o" firstAttribute="centerX" secondItem="2fV-Ce-lYh" secondAttribute="centerX" id="ikI-6E-21r"/>
+                            <constraint firstItem="86a-qd-Jom" firstAttribute="leading" secondItem="2fV-Ce-lYh" secondAttribute="leading" id="XN6-0I-4FV"/>
                             <constraint firstAttribute="trailing" secondItem="4qa-oX-xR8" secondAttribute="trailing" id="mCd-3c-C7A"/>
-                            <constraint firstItem="fPo-mU-as3" firstAttribute="centerY" secondItem="4qa-oX-xR8" secondAttribute="centerY" id="w4J-tk-j7c"/>
+                            <constraint firstAttribute="bottom" secondItem="86a-qd-Jom" secondAttribute="bottom" id="pRo-fF-U9h"/>
+                            <constraint firstAttribute="trailing" secondItem="86a-qd-Jom" secondAttribute="trailing" id="rLT-xq-d0V"/>
                         </constraints>
                     </view>
                     <connections>

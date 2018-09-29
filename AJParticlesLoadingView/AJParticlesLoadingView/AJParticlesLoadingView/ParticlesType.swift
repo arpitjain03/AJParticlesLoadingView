@@ -8,8 +8,7 @@
 
 import Foundation
 
-public enum ParticleEffect: String {
-    
+public enum ParticleEffect: String, CaseIterable {
     case fire = "Fire"
     case snow = "Snow"
     case rain = "Rain"
@@ -18,10 +17,13 @@ public enum ParticleEffect: String {
     case fireflies = "Fireflies"
     case spark = "Spark"
     case smoke = "Smoke"
+    static func random() -> ParticleEffect {
+        return ParticleEffect.allCases[
+            Int(arc4random_uniform(UInt32(ParticleEffect.allCases.count)))]
+    }
 }
 
-public enum ParticleImage: String {
-    
+public enum ParticleImage: String, CaseIterable {
     case sunflower = "sunflower"
     case balloon = "balloons"
     case star = "star"
@@ -29,5 +31,9 @@ public enum ParticleImage: String {
     case bokeh = "bokeh"
     case spark = "spark"
     case party = "party"
+    static func random() -> ParticleImage {
+        return ParticleImage.allCases[
+            Int(arc4random_uniform(UInt32(ParticleImage.allCases.count)))]
+    }
 
 }
