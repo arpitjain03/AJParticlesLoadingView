@@ -48,10 +48,10 @@ class ViewController: UIViewController {
         
         if sender.isSelected {
             objAJParticlesLoadingView.startAnimating()
-            sender.setTitle("STOP", for: UIControlState())
+            sender.setTitle("STOP", for: UIControl.State())
         } else {
             objAJParticlesLoadingView.stopAnimating()
-            sender.setTitle("START", for: UIControlState())
+            sender.setTitle("START", for: UIControl.State())
         }
     }
 

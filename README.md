@@ -3,10 +3,11 @@
 `AJParticlesLoadingView` is a simple subclass of UIView for creating amazing particles loading animation with using `Sprite Kit`. Our Xcode provides built-in [SpriteKit Particle File](http://help.apple.com/xcode/mac/current/#/dev9eed16018) which are being used to achieve different kinds of loading particles.  
 
 
-![GIF1](https://media.giphy.com/media/QYkCuYIGBcV6TpJF36/source.gif)![GIF2](https://media.giphy.com/media/j0Y9IyPk89OvWyuZ9Y/source.gif)![GIF3](https://media.giphy.com/media/dAoeXL1kdFA4bD5xb2/source.gif)![GIF4](https://media.giphy.com/media/UqLtw3jIoBPpnd12rQ/source.gif)![GIF5](https://media.giphy.com/media/UWgshu2rvsgg30cnon/source.gif)![GIF6](https://media.giphy.com/media/WsF7Pi5rfc3mvEChUL/source.gif)
+![GIF1](https://media.giphy.com/media/QYkCuYIGBcV6TpJF36/source.gif)![GIF6](https://media.giphy.com/media/WsF7Pi5rfc3mvEChUL/source.gif)
+
 
 ## Requirements
-iOS 9.0 and Swift 3 are required. 
+iOS 11.0 and Swift 5 and above
 
 ## Installation
 1. Just Drag and Drop AJParticlesLoadingView folder in your project.
